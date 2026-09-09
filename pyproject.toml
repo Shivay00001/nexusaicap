@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nexusai"
+name = "nexusaicap"
 version = "1.0.0"
 description = "Production-grade AI ecosystem — 20+ LLM providers, 7-role agent pipeline, 2000+ tools, advanced RAG, web dashboard, plugin system. More powerful than npmai."
 readme = "README.md"
