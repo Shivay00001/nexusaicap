@@ -492,7 +492,16 @@ Be concise."""),
         """Log with rich formatting."""
         try:
             from rich.console import Console
+            import sys
             console = Console()
-            console.print(f"  {emoji}  [bold]{message}[/bold]")
+            try:
+                console.print(f"  {emoji}  [bold]{message}[/bold]")
+            except UnicodeEncodeError:
+                # Fallback for Windows legacy console
+                sys.stdout.buffer.write(f"  {emoji}  {message}\n".encode("utf-8", errors="replace"))
         except ImportError:
-            print(f"  {emoji}  {message}")
+            import sys
+            try:
+                print(f"  {emoji}  {message}")
+            except UnicodeEncodeError:
+                sys.stdout.buffer.write(f"  {emoji}  {message}\n".encode("utf-8", errors="replace"))

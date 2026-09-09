@@ -40,6 +40,7 @@ PROVIDER_ENV_KEYS: dict[str, list[str]] = {
     "xai": ["XAI_API_KEY"],
     "cerebras": ["CEREBRAS_API_KEY"],
     "ollama": [],  # No key needed — local
+    "g4f": [],     # No key needed — free
 }
 
 # Default models per provider
@@ -159,8 +160,8 @@ class NexusConfig:
             if provider_name in self.providers:
                 continue
 
-            # Ollama is always available (local)
-            if provider_name == "ollama":
+            # Local/Free providers are always available
+            if provider_name in ("ollama", "g4f"):
                 self.providers[provider_name] = ProviderConfig(name=provider_name)
                 continue
 
