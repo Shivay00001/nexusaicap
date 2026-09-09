@@ -5,3 +5,5 @@ from nexusai.providers.base import BaseProvider, Message, Response, EmbeddingRes
 __all__ = ["BaseProvider", "Message", "Response", "EmbeddingResponse"]
 
 from nexusai.providers.g4f_provider import *
+
+from nexusai.providers.openrouter_provider import *

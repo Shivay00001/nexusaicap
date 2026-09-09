@@ -39,6 +39,7 @@ PROVIDER_ENV_KEYS: dict[str, list[str]] = {
     "perplexity": ["PERPLEXITY_API_KEY"],
     "xai": ["XAI_API_KEY"],
     "cerebras": ["CEREBRAS_API_KEY"],
+    "openrouter": ["OPENROUTER_API_KEY"],
     "ollama": [],  # No key needed — local
     "g4f": [],     # No key needed — free
 }
