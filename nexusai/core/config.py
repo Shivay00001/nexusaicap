@@ -42,6 +42,8 @@ PROVIDER_ENV_KEYS: dict[str, list[str]] = {
     "openrouter": ["OPENROUTER_API_KEY"],
     "ollama": [],  # No key needed — local
     "g4f": [],     # No key needed — free
+    "pollinations": [], # No key needed - completely free cloud API
+    "needle": [],  # Local on-device inference via WASM
 }
 
 # Default models per provider
@@ -162,7 +164,7 @@ class NexusConfig:
                 continue
 
             # Local/Free providers are always available
-            if provider_name in ("ollama", "g4f"):
+            if provider_name in ("ollama", "g4f", "pollinations", "needle"):
                 self.providers[provider_name] = ProviderConfig(name=provider_name)
                 continue
 
