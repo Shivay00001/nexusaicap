@@ -1,6 +1,6 @@
 # NexusAI
 
-The Ultimate Autonomous AI Agent Ecosystem. More powerful than `npmai`.
+The Ultimate Autonomous AI Agent Ecosystem.
 Ready to use with just one command.
 
 <img src="nexusai_banner.jpg" width="100%">

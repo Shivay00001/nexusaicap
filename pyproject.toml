@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "nexusaicap"
 version = "1.0.0"
-description = "Production-grade AI ecosystem — 20+ LLM providers, 7-role agent pipeline, 2000+ tools, advanced RAG, web dashboard, plugin system. More powerful than npmai."
+description = "Production-grade AI ecosystem — 20+ LLM providers, 7-role agent pipeline, 2000+ tools, advanced RAG, web dashboard, plugin system."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
