@@ -41,3 +41,8 @@ nexusai server
 ```bash
 docker-compose up -d
 ```
+
+
+## Prerequisites
+- Required environment and dependencies
+
