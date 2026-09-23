@@ -31,3 +31,4 @@ htmlcov/
 .ruff_cache/
 .nexusai/
 conversations.db
+node_modules/
