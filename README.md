@@ -4,6 +4,8 @@
 
 # NexusAI CAP (Comprehensive AI Platform)
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 A production-grade, extensible AI ecosystem designed to unify the capabilities of 20+ Large Language Model (LLM) providers, advanced Retrieval-Augmented Generation (RAG) pipelines, and a robust 7-role agent architecture.
 
 ## 🌟 Overview
